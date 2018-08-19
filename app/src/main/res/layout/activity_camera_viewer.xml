@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.tianfeng.swzn.facegrade.viewUtils.CircularMaskView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp" />
+
+    <ImageView
+        android:id="@+id/iv_top"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:src="@mipmap/top" />
+
+    <ImageView
+        android:id="@+id/iv_decorate_top"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:src="@mipmap/decotate_top" />
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="100dp"
+        android:paddingLeft="10dp"
+        android:src="@mipmap/left" />
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="100dp"
+        android:paddingRight="10dp"
+        android:src="@mipmap/right" />
+
+    <ImageView
+        android:id="@+id/iv_wai"
+        android:layout_width="308dp"
+        android:layout_height="308dp"
+        android:layout_below="@+id/iv_top"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/wai" />
+
+    <ImageView
+        android:id="@+id/iv_nei"
+        android:layout_width="308dp"
+        android:layout_height="308dp"
+        android:layout_below="@id/iv_top"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/zhong" />
+
+    <RelativeLayout
+        android:id="@+id/rl_result"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/iv_wai"
+        android:layout_marginTop="8dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/box" />
+
+        <TextView
+            android:id="@+id/tv_mark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="96"
+            android:textColor="#FFFF"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/tv_descript"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_mark"
+            android:layout_marginLeft="71dp"
+            android:layout_marginRight="71dp"
+            android:text="可以，很帅"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:src="@mipmap/decorate_bottom" />
+</RelativeLayout>
