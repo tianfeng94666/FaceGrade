@@ -3,8 +3,13 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         config {
+            keyAlias 'key0'
+            keyPassword '123456'
+            storeFile file('F:/AndroidStudioProjects/swzn.jks')
+            storePassword '123456'
         }
-
+        config1 {
+        }
     }
     compileSdkVersion 28
     defaultConfig {
@@ -19,6 +24,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.config
         }
     }
 }
@@ -43,4 +51,5 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     implementation 'org.greenrobot:eventbus:3.1.1'
     implementation files('libs/aip-java-sdk-4.3.2.jar')
+    implementation 'com.recker.flybanner:flybanner:1.3'
 }

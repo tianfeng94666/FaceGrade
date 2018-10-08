@@ -925,4 +925,5 @@ public class BitmapUtils {
         return contrast_bmp;
     }
 
+
 }

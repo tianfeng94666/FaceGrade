@@ -118,7 +118,7 @@ public class FaceOverlayView extends View {
                         rectF.left = getWidth() - right;
                         rectF.right = getWidth() - left;
                     }
-//                    canvas.drawRect(rectF, mPaint);
+                    canvas.drawRect(rectF, mPaint);
 //                    canvas.drawText("ID " + face.getId(), rectF.left, rectF.bottom + mTextPaint.getTextSize(), mTextPaint);
 //                    canvas.drawText("年龄 " + face.getAge(), rectF.left, rectF.bottom + mTextPaint.getTextSize() * 2, mTextPaint);
 //                    canvas.drawText("颜值 " + face.getBeauty(), rectF.left, rectF.bottom + mTextPaint.getTextSize() * 3, mTextPaint);

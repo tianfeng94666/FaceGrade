@@ -12,33 +12,38 @@
         android:layout_height="match_parent" />
 
     <com.tianfeng.swzn.facegrade.viewUtils.CircularMaskView
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="100dp" />
+        android:layout_marginTop="300px" />
 
     <ImageView
         android:id="@+id/iv_top"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:paddingBottom="10dp"
-        android:paddingTop="10dp"
+        android:layout_marginTop="300px"
+        android:layout_centerHorizontal="true"
+        android:layout_width="600px"
+        android:layout_height="168px"
+        android:paddingBottom="30px"
+        android:paddingTop="30px"
         android:src="@mipmap/top" />
 
     <ImageView
+        android:layout_marginTop="300px"
+
         android:id="@+id/iv_decorate_top"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:paddingLeft="25dp"
-        android:paddingRight="25dp"
-        android:src="@mipmap/decotate_top" />
+        android:layout_height="168px"
+        android:paddingLeft="90px"
+        android:paddingRight="90px"
+        android:src="@mipmap/decorate_top" />
 
     <ImageView
         android:id="@+id/iv_left"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="100dp"
-        android:paddingLeft="10dp"
+        android:layout_marginBottom="300px"
+        android:paddingLeft="30px"
         android:src="@mipmap/left" />
 
     <ImageView
@@ -46,37 +51,37 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="100dp"
-        android:paddingRight="10dp"
+        android:layout_marginBottom="300px"
+        android:paddingRight="30px"
         android:src="@mipmap/right" />
 
     <ImageView
         android:id="@+id/iv_wai"
-        android:layout_width="308dp"
-        android:layout_height="308dp"
+        android:layout_width="924px"
+        android:layout_height="924px"
         android:layout_below="@+id/iv_top"
         android:layout_centerHorizontal="true"
         android:src="@mipmap/wai" />
 
     <ImageView
         android:id="@+id/iv_nei"
-        android:layout_width="308dp"
-        android:layout_height="308dp"
-        android:layout_below="@id/iv_top"
+        android:layout_width="924px"
+        android:layout_height="924px"
+        android:layout_below="@+id/iv_top"
         android:layout_centerHorizontal="true"
         android:src="@mipmap/zhong" />
 
     <RelativeLayout
         android:id="@+id/rl_result"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="440px"
         android:layout_below="@+id/iv_wai"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24px"
         android:visibility="gone">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
             android:src="@mipmap/box" />
 
@@ -84,29 +89,38 @@
             android:id="@+id/tv_mark"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="140px"
             android:gravity="center"
             android:text="96"
             android:textColor="#FFFF"
-            android:textSize="34sp" />
+            android:textSize="72px" />
 
         <TextView
             android:id="@+id/tv_descript"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_mark"
-            android:layout_marginLeft="71dp"
-            android:layout_marginRight="71dp"
+            android:layout_marginTop="15px"
+            android:layout_marginLeft="235px"
+            android:layout_marginRight="235px"
             android:text="可以，很帅"
             android:textColor="#fff"
-            android:textSize="10sp" />
+            android:textSize="28px" />
     </RelativeLayout>
 
     <ImageView
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingRight="30px"
+        android:paddingLeft="30px"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="360px"
         android:src="@mipmap/decorate_bottom" />
+
+    <com.recker.flybanner.FlyBanner
+        android:id="@+id/flybanner"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_alignParentTop="true"></com.recker.flybanner.FlyBanner>
 </RelativeLayout>
